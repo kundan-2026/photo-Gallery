@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Nested Photo Gallery</h1>
+  <p class="subtitle" id="subtitle">Click a category to view photos</p>
+  <button id="backButton" style="display:none;">← Back to Categories</button>
+  <div class="gallery" id="gallery">
+    <!-- Main gallery categories or sub-gallery photos -->
+  </div>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" title="Close">&times;</button>
+      <img id="modalImage" src="" alt="Expanded view" />
+      <div class="modal-caption" id="modalCaption"></div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
