@@ -24,7 +24,7 @@ const galleryData = [
     ],
   },
   {
-    category: "Mountains",
+    category: "Temple",
     preview:
       "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=400&q=80",
     photos: [
@@ -47,7 +47,7 @@ const galleryData = [
     ],
   },
   {
-    category: "Ocean",
+    category: "Flower",
     preview:
       "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80",
     photos: [
@@ -70,7 +70,7 @@ const galleryData = [
     ],
   },
   {
-    category: "Cityscapes",
+    category: "Nature",
     preview:
       "https://images.unsplash.com/photo-1486915309851-b0cc1f8a008e?auto=format&fit=crop&w=400&q=80",
     photos: [
@@ -198,12 +198,10 @@ modal.addEventListener("click", (e) => {
   if (e.target === modal) closeModal();
 });
 
-// Close modal with ESC key
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal.classList.contains("show")) {
     closeModal();
   }
 });
 
-// Initial load: show categories
 showCategories();
